@@ -12,14 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
 
     private let imageNames = [
-        "bunny",
-        "parrot",
-        "puppy",
-        "kitty"
+        "hawaii",
+        "rome"
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = "Travel Destinations"
 
         setupViews()
     }

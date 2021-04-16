@@ -26,14 +26,10 @@ class ImageTableView: UITableView {
         dataSource = self
 
         switch imageNameRoot {
-        case "bunny":
-            backgroundColor = .systemPink
-        case "parrot":
+        case "hawaii":
             backgroundColor = .blue
-        case "puppy":
-            backgroundColor = .brown
-        case "kitty":
-            backgroundColor = .yellow
+        case "rome":
+            backgroundColor = .red
         default:
             backgroundColor = .white
         }
@@ -60,7 +56,9 @@ extension ImageTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ImageTableViewCell
         let imageName = "\(imageNameRoot)-\(indexPath.row)"
-        if let image = UIImage(named: imageName) {
+        if let url = Bundle.main.url(forResource: imageName, withExtension: "jpg"),
+            let data = try? Data(contentsOf: url),
+            let image = UIImage(data: data, scale: UIScreen.main.scale) {
             cell.setImage(image)
         }
         cell.contentView.backgroundColor = backgroundColor
@@ -73,7 +71,9 @@ class ImageTableViewCell: UITableViewCell {
 
     private lazy var posterView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+
         return imageView
     }()
 

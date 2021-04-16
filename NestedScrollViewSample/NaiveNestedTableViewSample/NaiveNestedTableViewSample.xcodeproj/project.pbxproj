@@ -16,6 +16,66 @@
 		DB0CF16E26296B7400A720CB /* NaiveNestedTableViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0CF16D26296B7400A720CB /* NaiveNestedTableViewSampleTests.swift */; };
 		DB0CF17926296B7400A720CB /* NaiveNestedTableViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0CF17826296B7400A720CB /* NaiveNestedTableViewSampleUITests.swift */; };
 		DB0CF18A26296C2500A720CB /* ImageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0CF18926296C2500A720CB /* ImageTableView.swift */; };
+		DBFB4C442629D6DF00E88828 /* hawaii-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C072629D6DF00E88828 /* hawaii-22.jpg */; };
+		DBFB4C452629D6DF00E88828 /* hawaii-24.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C082629D6DF00E88828 /* hawaii-24.jpeg */; };
+		DBFB4C462629D6DF00E88828 /* hawaii-23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C092629D6DF00E88828 /* hawaii-23.jpg */; };
+		DBFB4C472629D6DF00E88828 /* hawaii-21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C0A2629D6DF00E88828 /* hawaii-21.jpg */; };
+		DBFB4C482629D6DF00E88828 /* hawaii-20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C0B2629D6DF00E88828 /* hawaii-20.jpg */; };
+		DBFB4C492629D6DF00E88828 /* hawaii-18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C0C2629D6DF00E88828 /* hawaii-18.jpg */; };
+		DBFB4C4A2629D6DF00E88828 /* hawaii-30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C0D2629D6DF00E88828 /* hawaii-30.jpg */; };
+		DBFB4C4B2629D6DF00E88828 /* hawaii-25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C0E2629D6DF00E88828 /* hawaii-25.jpg */; };
+		DBFB4C4C2629D6DF00E88828 /* hawaii-19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C0F2629D6DF00E88828 /* hawaii-19.jpg */; };
+		DBFB4C4D2629D6DF00E88828 /* hawaii-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C102629D6DF00E88828 /* hawaii-8.jpg */; };
+		DBFB4C4E2629D6DF00E88828 /* hawaii-27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C112629D6DF00E88828 /* hawaii-27.jpg */; };
+		DBFB4C4F2629D6DF00E88828 /* hawaii-26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C122629D6DF00E88828 /* hawaii-26.jpg */; };
+		DBFB4C502629D6DF00E88828 /* hawaii-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C132629D6DF00E88828 /* hawaii-9.jpg */; };
+		DBFB4C512629D6DF00E88828 /* hawaii-16.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C142629D6DF00E88828 /* hawaii-16.jpeg */; };
+		DBFB4C522629D6DF00E88828 /* hawaii-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C152629D6DF00E88828 /* hawaii-4.jpg */; };
+		DBFB4C532629D6DF00E88828 /* hawaii-17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C162629D6DF00E88828 /* hawaii-17.jpg */; };
+		DBFB4C542629D6DF00E88828 /* hawaii-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C172629D6DF00E88828 /* hawaii-5.jpg */; };
+		DBFB4C552629D6DF00E88828 /* hawaii-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C182629D6DF00E88828 /* hawaii-7.jpg */; };
+		DBFB4C562629D6DF00E88828 /* hawaii-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C192629D6DF00E88828 /* hawaii-14.jpg */; };
+		DBFB4C572629D6DF00E88828 /* hawaii-28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C1A2629D6DF00E88828 /* hawaii-28.jpg */; };
+		DBFB4C582629D6DF00E88828 /* hawaii-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C1B2629D6DF00E88828 /* hawaii-29.jpg */; };
+		DBFB4C592629D6DF00E88828 /* hawaii-15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C1C2629D6DF00E88828 /* hawaii-15.jpg */; };
+		DBFB4C5A2629D6DF00E88828 /* hawaii-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C1D2629D6DF00E88828 /* hawaii-6.jpg */; };
+		DBFB4C5B2629D6DF00E88828 /* hawaii-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C1E2629D6DF00E88828 /* hawaii-2.jpg */; };
+		DBFB4C5C2629D6DF00E88828 /* hawaii-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C1F2629D6DF00E88828 /* hawaii-11.jpg */; };
+		DBFB4C5D2629D6DF00E88828 /* hawaii-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C202629D6DF00E88828 /* hawaii-10.jpg */; };
+		DBFB4C5E2629D6DF00E88828 /* hawaii-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C212629D6DF00E88828 /* hawaii-3.jpg */; };
+		DBFB4C5F2629D6DF00E88828 /* hawaii-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C222629D6DF00E88828 /* hawaii-1.jpg */; };
+		DBFB4C602629D6DF00E88828 /* hawaii-12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C232629D6DF00E88828 /* hawaii-12.jpg */; };
+		DBFB4C612629D6DF00E88828 /* hawaii-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C242629D6DF00E88828 /* hawaii-13.jpg */; };
+		DBFB4C622629D6DF00E88828 /* rome-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C262629D6DF00E88828 /* rome-14.jpg */; };
+		DBFB4C632629D6DF00E88828 /* rome-28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C272629D6DF00E88828 /* rome-28.jpg */; };
+		DBFB4C642629D6DF00E88828 /* rome-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C282629D6DF00E88828 /* rome-6.jpg */; };
+		DBFB4C652629D6DF00E88828 /* rome-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C292629D6DF00E88828 /* rome-7.jpg */; };
+		DBFB4C662629D6DF00E88828 /* rome-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C2A2629D6DF00E88828 /* rome-29.jpg */; };
+		DBFB4C672629D6DF00E88828 /* rome-15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C2B2629D6DF00E88828 /* rome-15.jpg */; };
+		DBFB4C682629D6DF00E88828 /* rome-17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C2C2629D6DF00E88828 /* rome-17.jpg */; };
+		DBFB4C692629D6DF00E88828 /* rome-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C2D2629D6DF00E88828 /* rome-4.jpg */; };
+		DBFB4C6A2629D6DF00E88828 /* rome-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C2E2629D6DF00E88828 /* rome-16.jpg */; };
+		DBFB4C6B2629D6DF00E88828 /* rome-12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C2F2629D6DF00E88828 /* rome-12.jpg */; };
+		DBFB4C6C2629D6DF00E88828 /* rome-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C302629D6DF00E88828 /* rome-1.jpg */; };
+		DBFB4C6D2629D6DF00E88828 /* rome-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C312629D6DF00E88828 /* rome-13.jpg */; };
+		DBFB4C6E2629D6DF00E88828 /* rome-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C322629D6DF00E88828 /* rome-11.jpg */; };
+		DBFB4C6F2629D6DF00E88828 /* rome-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C332629D6DF00E88828 /* rome-3.jpg */; };
+		DBFB4C702629D6DF00E88828 /* rome-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C342629D6DF00E88828 /* rome-2.jpg */; };
+		DBFB4C712629D6DF00E88828 /* rome-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C352629D6DF00E88828 /* rome-10.jpg */; };
+		DBFB4C722629D6DF00E88828 /* rome-21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C362629D6DF00E88828 /* rome-21.jpg */; };
+		DBFB4C732629D6DF00E88828 /* rome-20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C372629D6DF00E88828 /* rome-20.jpg */; };
+		DBFB4C742629D6DF00E88828 /* rome-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C382629D6DF00E88828 /* rome-22.jpg */; };
+		DBFB4C752629D6DF00E88828 /* rome-23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C392629D6DF00E88828 /* rome-23.jpg */; };
+		DBFB4C762629D6DF00E88828 /* rome-27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C3A2629D6DF00E88828 /* rome-27.jpg */; };
+		DBFB4C772629D6DF00E88828 /* rome-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C3B2629D6DF00E88828 /* rome-9.jpg */; };
+		DBFB4C782629D6DF00E88828 /* rome-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C3C2629D6DF00E88828 /* rome-8.jpg */; };
+		DBFB4C792629D6DF00E88828 /* rome-26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C3D2629D6DF00E88828 /* rome-26.jpg */; };
+		DBFB4C7A2629D6DF00E88828 /* rome-5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C3E2629D6DF00E88828 /* rome-5.jpeg */; };
+		DBFB4C7B2629D6DF00E88828 /* rome-18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C3F2629D6DF00E88828 /* rome-18.jpg */; };
+		DBFB4C7C2629D6DF00E88828 /* rome-24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C402629D6DF00E88828 /* rome-24.jpg */; };
+		DBFB4C7D2629D6DF00E88828 /* rome-30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C412629D6DF00E88828 /* rome-30.jpg */; };
+		DBFB4C7E2629D6DF00E88828 /* rome-25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C422629D6DF00E88828 /* rome-25.jpg */; };
+		DBFB4C7F2629D6DF00E88828 /* rome-19.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFB4C432629D6DF00E88828 /* rome-19.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +111,66 @@
 		DB0CF17826296B7400A720CB /* NaiveNestedTableViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaiveNestedTableViewSampleUITests.swift; sourceTree = "<group>"; };
 		DB0CF17A26296B7400A720CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB0CF18926296C2500A720CB /* ImageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableView.swift; sourceTree = "<group>"; };
+		DBFB4C072629D6DF00E88828 /* hawaii-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-22.jpg"; sourceTree = "<group>"; };
+		DBFB4C082629D6DF00E88828 /* hawaii-24.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-24.jpeg"; sourceTree = "<group>"; };
+		DBFB4C092629D6DF00E88828 /* hawaii-23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-23.jpg"; sourceTree = "<group>"; };
+		DBFB4C0A2629D6DF00E88828 /* hawaii-21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-21.jpg"; sourceTree = "<group>"; };
+		DBFB4C0B2629D6DF00E88828 /* hawaii-20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-20.jpg"; sourceTree = "<group>"; };
+		DBFB4C0C2629D6DF00E88828 /* hawaii-18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-18.jpg"; sourceTree = "<group>"; };
+		DBFB4C0D2629D6DF00E88828 /* hawaii-30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-30.jpg"; sourceTree = "<group>"; };
+		DBFB4C0E2629D6DF00E88828 /* hawaii-25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-25.jpg"; sourceTree = "<group>"; };
+		DBFB4C0F2629D6DF00E88828 /* hawaii-19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-19.jpg"; sourceTree = "<group>"; };
+		DBFB4C102629D6DF00E88828 /* hawaii-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-8.jpg"; sourceTree = "<group>"; };
+		DBFB4C112629D6DF00E88828 /* hawaii-27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-27.jpg"; sourceTree = "<group>"; };
+		DBFB4C122629D6DF00E88828 /* hawaii-26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-26.jpg"; sourceTree = "<group>"; };
+		DBFB4C132629D6DF00E88828 /* hawaii-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-9.jpg"; sourceTree = "<group>"; };
+		DBFB4C142629D6DF00E88828 /* hawaii-16.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-16.jpeg"; sourceTree = "<group>"; };
+		DBFB4C152629D6DF00E88828 /* hawaii-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-4.jpg"; sourceTree = "<group>"; };
+		DBFB4C162629D6DF00E88828 /* hawaii-17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-17.jpg"; sourceTree = "<group>"; };
+		DBFB4C172629D6DF00E88828 /* hawaii-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-5.jpg"; sourceTree = "<group>"; };
+		DBFB4C182629D6DF00E88828 /* hawaii-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-7.jpg"; sourceTree = "<group>"; };
+		DBFB4C192629D6DF00E88828 /* hawaii-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-14.jpg"; sourceTree = "<group>"; };
+		DBFB4C1A2629D6DF00E88828 /* hawaii-28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-28.jpg"; sourceTree = "<group>"; };
+		DBFB4C1B2629D6DF00E88828 /* hawaii-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-29.jpg"; sourceTree = "<group>"; };
+		DBFB4C1C2629D6DF00E88828 /* hawaii-15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-15.jpg"; sourceTree = "<group>"; };
+		DBFB4C1D2629D6DF00E88828 /* hawaii-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-6.jpg"; sourceTree = "<group>"; };
+		DBFB4C1E2629D6DF00E88828 /* hawaii-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-2.jpg"; sourceTree = "<group>"; };
+		DBFB4C1F2629D6DF00E88828 /* hawaii-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-11.jpg"; sourceTree = "<group>"; };
+		DBFB4C202629D6DF00E88828 /* hawaii-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-10.jpg"; sourceTree = "<group>"; };
+		DBFB4C212629D6DF00E88828 /* hawaii-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-3.jpg"; sourceTree = "<group>"; };
+		DBFB4C222629D6DF00E88828 /* hawaii-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-1.jpg"; sourceTree = "<group>"; };
+		DBFB4C232629D6DF00E88828 /* hawaii-12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-12.jpg"; sourceTree = "<group>"; };
+		DBFB4C242629D6DF00E88828 /* hawaii-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-13.jpg"; sourceTree = "<group>"; };
+		DBFB4C262629D6DF00E88828 /* rome-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-14.jpg"; sourceTree = "<group>"; };
+		DBFB4C272629D6DF00E88828 /* rome-28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-28.jpg"; sourceTree = "<group>"; };
+		DBFB4C282629D6DF00E88828 /* rome-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-6.jpg"; sourceTree = "<group>"; };
+		DBFB4C292629D6DF00E88828 /* rome-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-7.jpg"; sourceTree = "<group>"; };
+		DBFB4C2A2629D6DF00E88828 /* rome-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-29.jpg"; sourceTree = "<group>"; };
+		DBFB4C2B2629D6DF00E88828 /* rome-15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-15.jpg"; sourceTree = "<group>"; };
+		DBFB4C2C2629D6DF00E88828 /* rome-17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-17.jpg"; sourceTree = "<group>"; };
+		DBFB4C2D2629D6DF00E88828 /* rome-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-4.jpg"; sourceTree = "<group>"; };
+		DBFB4C2E2629D6DF00E88828 /* rome-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-16.jpg"; sourceTree = "<group>"; };
+		DBFB4C2F2629D6DF00E88828 /* rome-12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-12.jpg"; sourceTree = "<group>"; };
+		DBFB4C302629D6DF00E88828 /* rome-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-1.jpg"; sourceTree = "<group>"; };
+		DBFB4C312629D6DF00E88828 /* rome-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-13.jpg"; sourceTree = "<group>"; };
+		DBFB4C322629D6DF00E88828 /* rome-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-11.jpg"; sourceTree = "<group>"; };
+		DBFB4C332629D6DF00E88828 /* rome-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-3.jpg"; sourceTree = "<group>"; };
+		DBFB4C342629D6DF00E88828 /* rome-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-2.jpg"; sourceTree = "<group>"; };
+		DBFB4C352629D6DF00E88828 /* rome-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-10.jpg"; sourceTree = "<group>"; };
+		DBFB4C362629D6DF00E88828 /* rome-21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-21.jpg"; sourceTree = "<group>"; };
+		DBFB4C372629D6DF00E88828 /* rome-20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-20.jpg"; sourceTree = "<group>"; };
+		DBFB4C382629D6DF00E88828 /* rome-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-22.jpg"; sourceTree = "<group>"; };
+		DBFB4C392629D6DF00E88828 /* rome-23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-23.jpg"; sourceTree = "<group>"; };
+		DBFB4C3A2629D6DF00E88828 /* rome-27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-27.jpg"; sourceTree = "<group>"; };
+		DBFB4C3B2629D6DF00E88828 /* rome-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-9.jpg"; sourceTree = "<group>"; };
+		DBFB4C3C2629D6DF00E88828 /* rome-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-8.jpg"; sourceTree = "<group>"; };
+		DBFB4C3D2629D6DF00E88828 /* rome-26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-26.jpg"; sourceTree = "<group>"; };
+		DBFB4C3E2629D6DF00E88828 /* rome-5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-5.jpeg"; sourceTree = "<group>"; };
+		DBFB4C3F2629D6DF00E88828 /* rome-18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-18.jpg"; sourceTree = "<group>"; };
+		DBFB4C402629D6DF00E88828 /* rome-24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-24.jpg"; sourceTree = "<group>"; };
+		DBFB4C412629D6DF00E88828 /* rome-30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-30.jpg"; sourceTree = "<group>"; };
+		DBFB4C422629D6DF00E88828 /* rome-25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-25.jpg"; sourceTree = "<group>"; };
+		DBFB4C432629D6DF00E88828 /* rome-19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rome-19.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +221,7 @@
 		DB0CF15526296B7100A720CB /* NaiveNestedTableViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				DBFB4C052629D6A900E88828 /* Resources */,
 				DB0CF15626296B7100A720CB /* AppDelegate.swift */,
 				DB0CF15826296B7100A720CB /* SceneDelegate.swift */,
 				DB0CF15A26296B7100A720CB /* ViewController.swift */,
@@ -129,6 +250,90 @@
 				DB0CF17A26296B7400A720CB /* Info.plist */,
 			);
 			path = NaiveNestedTableViewSampleUITests;
+			sourceTree = "<group>";
+		};
+		DBFB4C052629D6A900E88828 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBFB4C062629D6DF00E88828 /* hawaii */,
+				DBFB4C252629D6DF00E88828 /* rome */,
+			);
+			name = Resources;
+			path = ../../Resources;
+			sourceTree = "<group>";
+		};
+		DBFB4C062629D6DF00E88828 /* hawaii */ = {
+			isa = PBXGroup;
+			children = (
+				DBFB4C072629D6DF00E88828 /* hawaii-22.jpg */,
+				DBFB4C082629D6DF00E88828 /* hawaii-24.jpeg */,
+				DBFB4C092629D6DF00E88828 /* hawaii-23.jpg */,
+				DBFB4C0A2629D6DF00E88828 /* hawaii-21.jpg */,
+				DBFB4C0B2629D6DF00E88828 /* hawaii-20.jpg */,
+				DBFB4C0C2629D6DF00E88828 /* hawaii-18.jpg */,
+				DBFB4C0D2629D6DF00E88828 /* hawaii-30.jpg */,
+				DBFB4C0E2629D6DF00E88828 /* hawaii-25.jpg */,
+				DBFB4C0F2629D6DF00E88828 /* hawaii-19.jpg */,
+				DBFB4C102629D6DF00E88828 /* hawaii-8.jpg */,
+				DBFB4C112629D6DF00E88828 /* hawaii-27.jpg */,
+				DBFB4C122629D6DF00E88828 /* hawaii-26.jpg */,
+				DBFB4C132629D6DF00E88828 /* hawaii-9.jpg */,
+				DBFB4C142629D6DF00E88828 /* hawaii-16.jpeg */,
+				DBFB4C152629D6DF00E88828 /* hawaii-4.jpg */,
+				DBFB4C162629D6DF00E88828 /* hawaii-17.jpg */,
+				DBFB4C172629D6DF00E88828 /* hawaii-5.jpg */,
+				DBFB4C182629D6DF00E88828 /* hawaii-7.jpg */,
+				DBFB4C192629D6DF00E88828 /* hawaii-14.jpg */,
+				DBFB4C1A2629D6DF00E88828 /* hawaii-28.jpg */,
+				DBFB4C1B2629D6DF00E88828 /* hawaii-29.jpg */,
+				DBFB4C1C2629D6DF00E88828 /* hawaii-15.jpg */,
+				DBFB4C1D2629D6DF00E88828 /* hawaii-6.jpg */,
+				DBFB4C1E2629D6DF00E88828 /* hawaii-2.jpg */,
+				DBFB4C1F2629D6DF00E88828 /* hawaii-11.jpg */,
+				DBFB4C202629D6DF00E88828 /* hawaii-10.jpg */,
+				DBFB4C212629D6DF00E88828 /* hawaii-3.jpg */,
+				DBFB4C222629D6DF00E88828 /* hawaii-1.jpg */,
+				DBFB4C232629D6DF00E88828 /* hawaii-12.jpg */,
+				DBFB4C242629D6DF00E88828 /* hawaii-13.jpg */,
+			);
+			path = hawaii;
+			sourceTree = "<group>";
+		};
+		DBFB4C252629D6DF00E88828 /* rome */ = {
+			isa = PBXGroup;
+			children = (
+				DBFB4C262629D6DF00E88828 /* rome-14.jpg */,
+				DBFB4C272629D6DF00E88828 /* rome-28.jpg */,
+				DBFB4C282629D6DF00E88828 /* rome-6.jpg */,
+				DBFB4C292629D6DF00E88828 /* rome-7.jpg */,
+				DBFB4C2A2629D6DF00E88828 /* rome-29.jpg */,
+				DBFB4C2B2629D6DF00E88828 /* rome-15.jpg */,
+				DBFB4C2C2629D6DF00E88828 /* rome-17.jpg */,
+				DBFB4C2D2629D6DF00E88828 /* rome-4.jpg */,
+				DBFB4C2E2629D6DF00E88828 /* rome-16.jpg */,
+				DBFB4C2F2629D6DF00E88828 /* rome-12.jpg */,
+				DBFB4C302629D6DF00E88828 /* rome-1.jpg */,
+				DBFB4C312629D6DF00E88828 /* rome-13.jpg */,
+				DBFB4C322629D6DF00E88828 /* rome-11.jpg */,
+				DBFB4C332629D6DF00E88828 /* rome-3.jpg */,
+				DBFB4C342629D6DF00E88828 /* rome-2.jpg */,
+				DBFB4C352629D6DF00E88828 /* rome-10.jpg */,
+				DBFB4C362629D6DF00E88828 /* rome-21.jpg */,
+				DBFB4C372629D6DF00E88828 /* rome-20.jpg */,
+				DBFB4C382629D6DF00E88828 /* rome-22.jpg */,
+				DBFB4C392629D6DF00E88828 /* rome-23.jpg */,
+				DBFB4C3A2629D6DF00E88828 /* rome-27.jpg */,
+				DBFB4C3B2629D6DF00E88828 /* rome-9.jpg */,
+				DBFB4C3C2629D6DF00E88828 /* rome-8.jpg */,
+				DBFB4C3D2629D6DF00E88828 /* rome-26.jpg */,
+				DBFB4C3E2629D6DF00E88828 /* rome-5.jpeg */,
+				DBFB4C3F2629D6DF00E88828 /* rome-18.jpg */,
+				DBFB4C402629D6DF00E88828 /* rome-24.jpg */,
+				DBFB4C412629D6DF00E88828 /* rome-30.jpg */,
+				DBFB4C422629D6DF00E88828 /* rome-25.jpg */,
+				DBFB4C432629D6DF00E88828 /* rome-19.png */,
+			);
+			path = rome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +439,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFB4C5E2629D6DF00E88828 /* hawaii-3.jpg in Resources */,
+				DBFB4C5B2629D6DF00E88828 /* hawaii-2.jpg in Resources */,
+				DBFB4C742629D6DF00E88828 /* rome-22.jpg in Resources */,
+				DBFB4C542629D6DF00E88828 /* hawaii-5.jpg in Resources */,
+				DBFB4C512629D6DF00E88828 /* hawaii-16.jpeg in Resources */,
+				DBFB4C772629D6DF00E88828 /* rome-9.jpg in Resources */,
+				DBFB4C5F2629D6DF00E88828 /* hawaii-1.jpg in Resources */,
+				DBFB4C7D2629D6DF00E88828 /* rome-30.jpg in Resources */,
+				DBFB4C6F2629D6DF00E88828 /* rome-3.jpg in Resources */,
+				DBFB4C532629D6DF00E88828 /* hawaii-17.jpg in Resources */,
+				DBFB4C6B2629D6DF00E88828 /* rome-12.jpg in Resources */,
+				DBFB4C7F2629D6DF00E88828 /* rome-19.png in Resources */,
+				DBFB4C7A2629D6DF00E88828 /* rome-5.jpeg in Resources */,
+				DBFB4C4B2629D6DF00E88828 /* hawaii-25.jpg in Resources */,
+				DBFB4C6D2629D6DF00E88828 /* rome-13.jpg in Resources */,
+				DBFB4C442629D6DF00E88828 /* hawaii-22.jpg in Resources */,
+				DBFB4C702629D6DF00E88828 /* rome-2.jpg in Resources */,
+				DBFB4C6E2629D6DF00E88828 /* rome-11.jpg in Resources */,
+				DBFB4C4C2629D6DF00E88828 /* hawaii-19.jpg in Resources */,
+				DBFB4C7B2629D6DF00E88828 /* rome-18.jpg in Resources */,
+				DBFB4C622629D6DF00E88828 /* rome-14.jpg in Resources */,
+				DBFB4C782629D6DF00E88828 /* rome-8.jpg in Resources */,
+				DBFB4C7C2629D6DF00E88828 /* rome-24.jpg in Resources */,
+				DBFB4C4A2629D6DF00E88828 /* hawaii-30.jpg in Resources */,
+				DBFB4C762629D6DF00E88828 /* rome-27.jpg in Resources */,
+				DBFB4C502629D6DF00E88828 /* hawaii-9.jpg in Resources */,
+				DBFB4C472629D6DF00E88828 /* hawaii-21.jpg in Resources */,
+				DBFB4C5C2629D6DF00E88828 /* hawaii-11.jpg in Resources */,
+				DBFB4C562629D6DF00E88828 /* hawaii-14.jpg in Resources */,
 				DB0CF16326296B7300A720CB /* LaunchScreen.storyboard in Resources */,
+				DBFB4C692629D6DF00E88828 /* rome-4.jpg in Resources */,
+				DBFB4C632629D6DF00E88828 /* rome-28.jpg in Resources */,
+				DBFB4C722629D6DF00E88828 /* rome-21.jpg in Resources */,
+				DBFB4C452629D6DF00E88828 /* hawaii-24.jpeg in Resources */,
+				DBFB4C522629D6DF00E88828 /* hawaii-4.jpg in Resources */,
+				DBFB4C642629D6DF00E88828 /* rome-6.jpg in Resources */,
+				DBFB4C552629D6DF00E88828 /* hawaii-7.jpg in Resources */,
+				DBFB4C792629D6DF00E88828 /* rome-26.jpg in Resources */,
+				DBFB4C7E2629D6DF00E88828 /* rome-25.jpg in Resources */,
 				DB0CF16026296B7300A720CB /* Assets.xcassets in Resources */,
+				DBFB4C6A2629D6DF00E88828 /* rome-16.jpg in Resources */,
+				DBFB4C4D2629D6DF00E88828 /* hawaii-8.jpg in Resources */,
+				DBFB4C4E2629D6DF00E88828 /* hawaii-27.jpg in Resources */,
 				DB0CF15E26296B7100A720CB /* Main.storyboard in Resources */,
+				DBFB4C482629D6DF00E88828 /* hawaii-20.jpg in Resources */,
+				DBFB4C5A2629D6DF00E88828 /* hawaii-6.jpg in Resources */,
+				DBFB4C572629D6DF00E88828 /* hawaii-28.jpg in Resources */,
+				DBFB4C462629D6DF00E88828 /* hawaii-23.jpg in Resources */,
+				DBFB4C672629D6DF00E88828 /* rome-15.jpg in Resources */,
+				DBFB4C612629D6DF00E88828 /* hawaii-13.jpg in Resources */,
+				DBFB4C6C2629D6DF00E88828 /* rome-1.jpg in Resources */,
+				DBFB4C5D2629D6DF00E88828 /* hawaii-10.jpg in Resources */,
+				DBFB4C752629D6DF00E88828 /* rome-23.jpg in Resources */,
+				DBFB4C712629D6DF00E88828 /* rome-10.jpg in Resources */,
+				DBFB4C592629D6DF00E88828 /* hawaii-15.jpg in Resources */,
+				DBFB4C492629D6DF00E88828 /* hawaii-18.jpg in Resources */,
+				DBFB4C732629D6DF00E88828 /* rome-20.jpg in Resources */,
+				DBFB4C682629D6DF00E88828 /* rome-17.jpg in Resources */,
+				DBFB4C4F2629D6DF00E88828 /* hawaii-26.jpg in Resources */,
+				DBFB4C652629D6DF00E88828 /* rome-7.jpg in Resources */,
+				DBFB4C662629D6DF00E88828 /* rome-29.jpg in Resources */,
+				DBFB4C582629D6DF00E88828 /* hawaii-29.jpg in Resources */,
+				DBFB4C602629D6DF00E88828 /* hawaii-12.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
