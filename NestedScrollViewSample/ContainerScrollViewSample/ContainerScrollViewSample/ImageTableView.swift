@@ -23,6 +23,10 @@ class ImageTableView: UITableView {
 
     private func setup() {
         register(ImageTableViewCell.self, forCellReuseIdentifier: "Cell")
+
+        // This is very important. Number of cell reused apparently uses this value
+        estimatedRowHeight = 320
+
         dataSource = self
 
         switch imageNameRoot {
