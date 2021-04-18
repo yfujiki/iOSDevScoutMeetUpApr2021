@@ -66,12 +66,12 @@ class ContainerScrollView: UIScrollView {
 
         for scrollSubview in contentView.subviews.filter({ $0 is UIScrollView }) {
             let scrollView = scrollSubview as! UIScrollView
-            let tag = scrollView.tag
+//            let tag = scrollView.tag
 
             let offsetY = contentOffset.y - yOffsetCurrentSubview
             let frameBottomY = offsetY + frame.height
 
-            NSLog("\(tag): \(offsetY) - \(frameBottomY)")
+//            NSLog("\(tag): \(offsetY) - \(frameBottomY)")
             if frameBottomY <= 0 {
                 // Lower than the window
                 scrollView.frame = CGRect(x: 0, y: yOffsetCurrentSubview, width: scrollView.frame.width, height: 0)
@@ -85,13 +85,13 @@ class ContainerScrollView: UIScrollView {
                 let subViewHeight = min(scrollView.contentSize.height - offsetY, frame.height)
                 scrollView.frame = CGRect(x: 0, y: offsetY + yOffsetCurrentSubview, width: scrollView.frame.width, height: subViewHeight)
                 scrollView.contentOffset = CGPoint(x: 0, y: offsetY)
-                NSLog("\(tag): \(scrollView.frame)")
+//                NSLog("\(tag): \(scrollView.frame)")
             } else {
                 // Upper part is visible
                 let subViewHeight = min(frameBottomY, frame.height)
                 scrollView.frame = CGRect(x: 0, y: yOffsetCurrentSubview, width: scrollView.frame.width, height: subViewHeight)
                 scrollView.contentOffset = CGPoint(x: 0, y: 0)
-                NSLog("\(tag): \(scrollView.frame)")
+//                NSLog("\(tag): \(scrollView.frame)")
             }
 
             yOffsetCurrentSubview += scrollView.contentSize.height
