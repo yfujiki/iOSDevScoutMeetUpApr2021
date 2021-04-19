@@ -23,6 +23,9 @@ class ImageTableView: UITableView {
 
     private func setup() {
         register(ImageTableViewCell.self, forCellReuseIdentifier: "Cell")
+        estimatedRowHeight = 320
+        showsVerticalScrollIndicator = false
+
         dataSource = self
 
         switch imageNameRoot {
@@ -55,12 +58,13 @@ extension ImageTableView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ImageTableViewCell
-        let imageName = "\(imageNameRoot)-\(indexPath.row)"
+        let imageName = "\(imageNameRoot)-\(indexPath.row + 1)"
         if let url = Bundle.main.url(forResource: imageName, withExtension: "jpg"),
             let data = try? Data(contentsOf: url),
             let image = UIImage(data: data, scale: UIScreen.main.scale) {
             cell.setImage(image)
         }
+        cell.setNumber(indexPath.row)
 
         cell.contentView.backgroundColor = backgroundColor
 
@@ -78,6 +82,16 @@ class ImageTableViewCell: UITableViewCell {
         return imageView
     }()
 
+    private lazy var numberLabel: UILabel = {
+        let label = UILabel()
+
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 72)
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        return label
+    }()
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -91,6 +105,10 @@ class ImageTableViewCell: UITableViewCell {
         posterView.image = image
     }
 
+    func setNumber(_ number: Int) {
+        numberLabel.text = "\(number)"
+    }
+
     private func setup() {
         contentView.addSubview(posterView)
 
@@ -101,6 +119,13 @@ class ImageTableViewCell: UITableViewCell {
             posterView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             posterView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             posterView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+        ])
+
+        posterView.addSubview(numberLabel)
+
+        NSLayoutConstraint.activate([
+            numberLabel.centerXAnchor.constraint(equalTo: posterView.centerXAnchor),
+            numberLabel.centerYAnchor.constraint(equalTo: posterView.centerYAnchor)
         ])
     }
 
