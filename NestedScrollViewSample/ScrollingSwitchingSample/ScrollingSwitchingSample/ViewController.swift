@@ -8,16 +8,11 @@
 import UIKit
 
 // ToDo:
-// Debug which scrollview is in control with BG color, maybe?
 // Boundary issues => Maybe you can control this by transferring the contentOffset to other views
 //  - Sometimes scroll up stuck at top of second
 //  - Sometimes you need to scroll down couple of times after transitioning to second
 //  - White background at the bottom
 //  - Inertia in general
-// Boundary issue - ContentSize gets messed up at rendering
-// Reset that translation value from previous scrollview when control switches
-//  - Use isUserInteracted flag?
-// bounces?
 class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: OuterScrollView!
@@ -123,7 +118,7 @@ class ViewController: UIViewController {
             tableView.isScrollEnabled = tableView == newScrollViewInCharge
         }
 
-        // Content Offset 
+        // Content Offset
         scrollViewInControl = newScrollViewInCharge
     }
 
@@ -181,9 +176,9 @@ extension UIScrollView {
         NSLog("=@ Panning down?(\(scrollViewInControl.tag)) \(scrollViewInControl.isPanningDown)")
         NSLog("#@ Bounds (checking top) \(bounds)")
         NSLog("#@ ContentSize (checking top) \(contentSize)")
-        NSLog("#@ IsReachingToTop \(scrollViewInControl.isPanningDown && bounds.origin.y < 100)")
+        NSLog("#@ IsReachingToTop \(scrollViewInControl.isPanningDown && bounds.origin.y <= 0)")
         return scrollViewInControl.isPanningDown &&
-            bounds.origin.y < 100
+            bounds.origin.y <= 0
     }
 
     func isReachingToEnd(in scrollViewInControl: UIScrollView?) -> Bool {
@@ -191,10 +186,10 @@ extension UIScrollView {
         NSLog("=@ Panning up?(\(scrollViewInControl.tag)) \(scrollViewInControl.isPanningUp)")
         NSLog("#@ Bounds (checking bottom) \(bounds)")
         NSLog("#@ ContentSize (checking bottom) \(contentSize)")
-        NSLog("#@ IsReachingToEnd \(scrollViewInControl.isPanningUp &&          bounds.origin.y + bounds.size.height + 100 > contentSize.height)")
+        NSLog("#@ IsReachingToEnd \(scrollViewInControl.isPanningUp && bounds.origin.y + bounds.size.height >= contentSize.height)")
 
         return scrollViewInControl.isPanningUp &&
-            bounds.origin.y + bounds.size.height + 100 > contentSize.height
+            bounds.origin.y + bounds.size.height >= contentSize.height
     }
 }
 
