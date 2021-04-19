@@ -73,13 +73,14 @@ class ViewController: UIViewController {
         scrollView.tag = 0
         scrollView.showsVerticalScrollIndicator = false
         scrollView.delegate = self
+        scrollView.bounces = false
 
         var lastTableView: UITableView?
 
         for (i, imageName) in imageNames.enumerated() {
 //        imageNames.forEach { (imageName) in
             let tableView = ImageTableView(imageNameRoot: imageName)
-//            tableView.bounces = false
+            tableView.bounces = false
             tableView.delegate = self
             tableView.tag = i + 1
 
