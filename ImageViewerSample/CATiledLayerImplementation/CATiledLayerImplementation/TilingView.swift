@@ -10,13 +10,19 @@ import CoreGraphics
 import UIKit
 
 class TilingView: UIView {
+    static let imageNameRoot = "Sample"
+    
+    // Single tile size
+    static let tileWidth = CGFloat(2560) / UIScreen.main.scale
+    static let tileHeight = CGFloat(1440) / UIScreen.main.scale
+    
+    // Image size of min/max zoom level
+    static let minImageSize = CGSize(width: TilingView.tileWidth * 1, height: TilingView.tileHeight * 1)
+    static let maxImageSize = CGSize(width: TilingView.tileWidth * 4, height: TilingView.tileHeight * 4)
+
     override class var layerClass: AnyClass {
         return CATiledLayer.self
     }
-
-    static let imageNameRoot = "Sample"
-    static let tileWidth = CGFloat(2560) / UIScreen.main.scale
-    static let tileHeight = CGFloat(1440) / UIScreen.main.scale
 
     init(size: CGSize) {
         super.init(frame: CGRect(origin: .zero, size: size))

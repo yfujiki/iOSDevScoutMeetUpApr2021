@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: - UI controls (boilerplate)
-    private lazy var scrollView: ScrollView = {
-        let scrollView = ScrollView()
+    private lazy var scrollView: ContentCenteredScrollView = {
+        let scrollView = ContentCenteredScrollView()
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
 
@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         ]
     }()
 
+    private lazy var tilingView: TilingView = {
+        // This size defines the TilingView at zoomScale=1
+        let tilingView = TilingView(size: TilingView.minImageSize)
+        return tilingView
+    }()
+
     // MARK: - Setup
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +47,32 @@ class ViewController: UIViewController {
     private func setupViews() {
         view.addSubview(scrollView)
         NSLayoutConstraint.activate(scrollViewConstraints)
-        scrollView.loadTiles()
+        scrollView.addSubview(tilingView)
+        
+        setMinMaxZoomScale()
     }
+    
+    private func setMinMaxZoomScale() {
+        // maximum
+        var expectedWidthZoomScale = (TilingView.maxImageSize.width / tilingView.bounds.size.width)
+        var expectedHeightZoomScale = (TilingView.maxImageSize.height / tilingView.bounds.size.width)
+        scrollView.maximumZoomScale = max(expectedWidthZoomScale, expectedHeightZoomScale)
+
+        // minimum
+        let bounds = UIScreen.main.bounds
+        expectedWidthZoomScale = bounds.width / tilingView.bounds.size.width
+        expectedHeightZoomScale = bounds.height / tilingView.bounds.size.height
+        scrollView.minimumZoomScale = min(expectedWidthZoomScale, expectedHeightZoomScale)
+
+        // current
+        scrollView.zoomScale = scrollView.minimumZoomScale
+    }
+
 }
 
 // MARK: - Delegate
 extension ViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return self.scrollView.viewForZooming
+        return self.tilingView
     }
 }

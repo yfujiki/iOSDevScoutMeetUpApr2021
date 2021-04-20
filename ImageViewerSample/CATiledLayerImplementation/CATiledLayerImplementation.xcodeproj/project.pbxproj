@@ -15,8 +15,8 @@
 		DBB8D525261FC59C0041F32B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB8D523261FC59C0041F32B /* LaunchScreen.storyboard */; };
 		DBB8D530261FC59C0041F32B /* CATiledLayerImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8D52F261FC59C0041F32B /* CATiledLayerImplementationTests.swift */; };
 		DBB8D53B261FC59C0041F32B /* CATiledLayerImplementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8D53A261FC59C0041F32B /* CATiledLayerImplementationUITests.swift */; };
-		DBBDCC5C262653DE0063E591 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCC5B262653DE0063E591 /* GalleryView.swift */; };
-		DBBDCC7626273D5D0063E591 /* GalleryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCC7526273D5D0063E591 /* GalleryScrollView.swift */; };
+		DBBDCC5C262653DE0063E591 /* TilingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCC5B262653DE0063E591 /* TilingView.swift */; };
+		DBBDCC7626273D5D0063E591 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBDCC7526273D5D0063E591 /* ScrollView.swift */; };
 		DBBDCC9C262743E60063E591 /* Sample-L2-R2-C1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCC87262743E30063E591 /* Sample-L2-R2-C1.jpg */; };
 		DBBDCC9D262743E60063E591 /* Sample-L2-R1-C1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCC88262743E30063E591 /* Sample-L2-R1-C1.jpg */; };
 		DBBDCC9E262743E60063E591 /* Sample-L2-R0-C3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBBDCC89262743E30063E591 /* Sample-L2-R0-C3.jpg */; };
@@ -72,8 +72,8 @@
 		DBB8D536261FC59C0041F32B /* CATiledLayerImplementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CATiledLayerImplementationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB8D53A261FC59C0041F32B /* CATiledLayerImplementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATiledLayerImplementationUITests.swift; sourceTree = "<group>"; };
 		DBB8D53C261FC59C0041F32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBBDCC5B262653DE0063E591 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
-		DBBDCC7526273D5D0063E591 /* GalleryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryScrollView.swift; sourceTree = "<group>"; };
+		DBBDCC5B262653DE0063E591 /* TilingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilingView.swift; sourceTree = "<group>"; };
+		DBBDCC7526273D5D0063E591 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		DBBDCC87262743E30063E591 /* Sample-L2-R2-C1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sample-L2-R2-C1.jpg"; sourceTree = "<group>"; };
 		DBBDCC88262743E30063E591 /* Sample-L2-R1-C1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sample-L2-R1-C1.jpg"; sourceTree = "<group>"; };
 		DBBDCC89262743E30063E591 /* Sample-L2-R0-C3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sample-L2-R0-C3.jpg"; sourceTree = "<group>"; };
@@ -146,11 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				DBBDCC82262743B40063E591 /* Resources */,
-				DBBDCC7526273D5D0063E591 /* GalleryScrollView.swift */,
-				DBBDCC5B262653DE0063E591 /* GalleryView.swift */,
+				DBB8D51C261FC59A0041F32B /* ViewController.swift */,
+				DBBDCC5B262653DE0063E591 /* TilingView.swift */,
+				DBBDCC7526273D5D0063E591 /* ScrollView.swift */,
 				DBB8D518261FC59A0041F32B /* AppDelegate.swift */,
 				DBB8D51A261FC59A0041F32B /* SceneDelegate.swift */,
-				DBB8D51C261FC59A0041F32B /* ViewController.swift */,
 				DBB8D51E261FC59A0041F32B /* Main.storyboard */,
 				DBB8D521261FC59C0041F32B /* Assets.xcassets */,
 				DBB8D523261FC59C0041F32B /* LaunchScreen.storyboard */,
@@ -358,9 +358,9 @@
 			files = (
 				DBB8D51D261FC59A0041F32B /* ViewController.swift in Sources */,
 				DBB8D519261FC59A0041F32B /* AppDelegate.swift in Sources */,
-				DBBDCC7626273D5D0063E591 /* GalleryScrollView.swift in Sources */,
+				DBBDCC7626273D5D0063E591 /* ScrollView.swift in Sources */,
 				DBB8D51B261FC59A0041F32B /* SceneDelegate.swift in Sources */,
-				DBBDCC5C262653DE0063E591 /* GalleryView.swift in Sources */,
+				DBBDCC5C262653DE0063E591 /* TilingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
