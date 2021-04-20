@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: - UI controls (boilerplate)
-    private lazy var scrollView: GalleryScrollView = {
-        let scrollView = GalleryScrollView()
+    private lazy var scrollView: ScrollView = {
+        let scrollView = ScrollView()
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
 
@@ -49,9 +49,5 @@ class ViewController: UIViewController {
 extension ViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.scrollView.viewForZooming
-    }
-
-    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        NSLog("Zoomed to scale \(scale)")
     }
 }
