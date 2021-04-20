@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ScrollViewImplementation
+//  UIImageViewImplementation
 //
 //  Created by Yuichi Fujiki on 9/4/21.
 //

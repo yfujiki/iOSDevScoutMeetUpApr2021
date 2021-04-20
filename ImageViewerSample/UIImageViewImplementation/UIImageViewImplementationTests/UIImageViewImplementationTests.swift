@@ -1,14 +1,14 @@
 //
-//  ScrollViewImplementationTests.swift
-//  ScrollViewImplementationTests
+//  UIImageViewImplementationTests.swift
+//  UIImageViewImplementationTests
 //
-//  Created by Yuichi Fujiki on 9/4/21.
+//  Created by Yuichi Fujiki on 20/4/21.
 //
 
 import XCTest
-@testable import ScrollViewImplementation
+@testable import UIImageViewImplementation
 
-class ScrollViewImplementationTests: XCTestCase {
+class UIImageViewImplementationTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
