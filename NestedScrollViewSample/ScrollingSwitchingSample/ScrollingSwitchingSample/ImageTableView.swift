@@ -23,6 +23,10 @@ class ImageTableView: UITableView {
 
     private func setup() {
         register(ImageTableViewCell.self, forCellReuseIdentifier: "Cell")
+
+        // Setting estimatedRowHeight to close to what you get eventually, is important.
+        // If estimatedRowHeight is much smaller than actual height, iOS will end up caching more cells for reuse than necessary.
+        // iOS would think more cells would occupy the screen at one time.
         estimatedRowHeight = 320
         showsVerticalScrollIndicator = false
 
@@ -64,7 +68,7 @@ extension ImageTableView: UITableViewDataSource {
             let image = UIImage(data: data, scale: UIScreen.main.scale) {
             cell.setImage(image)
         }
-        cell.setNumber(indexPath.row)
+//        cell.setNumber(indexPath.row)
 
         cell.contentView.backgroundColor = backgroundColor
 

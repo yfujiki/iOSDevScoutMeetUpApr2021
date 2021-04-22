@@ -7,15 +7,7 @@
 
 import UIKit
 
-// ToDo:
-// Boundary issues => Maybe you can control this by transferring the contentOffset to other views
-//  - Sometimes scroll up stuck at top of second
-//  - Sometimes you need to scroll down couple of times after transitioning to second
-//  - White background at the bottom
-//  - Inertia in general
 class ViewController: UIViewController {
-
-    @IBOutlet weak var scrollView: OuterScrollView!
 
     private let imageNames = [
         "hawaii",
@@ -28,22 +20,7 @@ class ViewController: UIViewController {
     ]
 
     private var tableViews = [UITableView]()
-    private var scrollViewInControl: UIScrollView? {
-        didSet {
-            var backgroundColor: UIColor = .white
-            if scrollViewInControl == scrollView {
-                backgroundColor = .yellow
-            } else {
-                for (i, tableView) in tableViews.enumerated() {
-                    if scrollViewInControl == tableView {
-                        backgroundColor = colors[i]
-                        break
-                    }
-                }
-            }
-            navigationController?.navigationBar.backgroundColor = backgroundColor
-        }
-    }
+    private var scrollViewInControl: UIScrollView?
 
     private var topPadding: CGFloat {
         let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
@@ -56,6 +33,26 @@ class ViewController: UIViewController {
         return safeAreaHeight
     }
 
+    // MARK: - UI controls (boilerplate)
+
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+
+        return scrollView
+    }()
+
+    private lazy var scrollViewConstraints: [NSLayoutConstraint] = {
+        return [
+            scrollView.frameLayoutGuide.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.frameLayoutGuide.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.frameLayoutGuide.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.frameLayoutGuide.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ]
+    }()
+
+    // MARK: - Setup
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,25 +61,21 @@ class ViewController: UIViewController {
         setupViews()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        switchScrolling()
-    }
-
     private func setupViews() {
-        scrollView.tag = 0
+
+        view.addSubview(scrollView)
+        NSLayoutConstraint.activate(scrollViewConstraints)
+
         scrollView.showsVerticalScrollIndicator = false
         scrollView.delegate = self
         scrollView.bounces = false
 
         var lastTableView: UITableView?
 
-        for (i, imageName) in imageNames.enumerated() {
-//        imageNames.forEach { (imageName) in
+        imageNames.forEach { (imageName) in
             let tableView = ImageTableView(imageNameRoot: imageName)
             tableView.bounces = false
             tableView.delegate = self
-            tableView.tag = i + 1
 
             scrollView.addSubview(tableView)
 
@@ -111,6 +104,13 @@ class ViewController: UIViewController {
         lastTableView?.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: bottomPadding).isActive = true
     }
 
+    // MARK: - Switch Scrolling Control
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        switchScrolling()
+    }
+
     private func switchScrolling() {
         let newScrollViewInCharge = scrollViewInCharge()
 
@@ -126,20 +126,15 @@ class ViewController: UIViewController {
     private func scrollViewInCharge() -> UIScrollView {
         var visibleScrollViews = [UIScrollView]()
         let scrollViewBounds = scrollView.bounds.inset(by: UIEdgeInsets(top: topPadding, left: 0, bottom: 0, right: 0))
-//        NSLog("ScrollView bounds \(scrollViewBounds)")
 
         tableViews.forEach { (tableView) in
-//            NSLog("TableView(\(tableView.tag)) frame \(tableView.frame)")
             if tableView.frame.intersects(scrollViewBounds) {
                 visibleScrollViews.append(tableView)
             }
-//            NSLog("TableView(\(tableView.tag)) bounds \(tableView.bounds)")
-//            NSLog("TableView(\(tableView.tag)) content size \(tableView.contentSize)")
         }
 
         if visibleScrollViews.count == 1 {
             let visibleScrollView = visibleScrollViews.first!
-//            if visibleScrollView.frame.contains(scrollViewBounds) {
             if visibleScrollView.isReachingToTop(in: scrollViewInControl) {
                 if visibleScrollView != tableViews.first {
                     return scrollView
@@ -151,46 +146,8 @@ class ViewController: UIViewController {
                 }
             }
             return visibleScrollView
-//            }
         }
         return scrollView
-    }
-}
-
-extension UIScrollView {
-    var isUserInteracted: Bool {
-        return isTracking || isDragging || isDecelerating
-    }
-
-    var isPanningUp: Bool {
-        NSLog("=* Pan translation : \(panGestureRecognizer.translation(in: self).y)")
-        return panGestureRecognizer.translation(in: self).y < 0
-    }
-
-    var isPanningDown: Bool {
-        NSLog("=* Pan translation : \(panGestureRecognizer.translation(in: self).y)")
-        return panGestureRecognizer.translation(in: self).y > 0
-    }
-
-    func isReachingToTop(in scrollViewInControl: UIScrollView?) -> Bool {
-        guard let scrollViewInControl = scrollViewInControl else { return false }
-        NSLog("=@ Panning down?(\(scrollViewInControl.tag)) \(scrollViewInControl.isPanningDown)")
-        NSLog("#@ Bounds (checking top) \(bounds)")
-        NSLog("#@ ContentSize (checking top) \(contentSize)")
-        NSLog("#@ IsReachingToTop \(scrollViewInControl.isPanningDown && bounds.origin.y <= 0)")
-        return scrollViewInControl.isPanningDown &&
-            bounds.origin.y <= 0
-    }
-
-    func isReachingToEnd(in scrollViewInControl: UIScrollView?) -> Bool {
-        guard let scrollViewInControl = scrollViewInControl else { return false }
-        NSLog("=@ Panning up?(\(scrollViewInControl.tag)) \(scrollViewInControl.isPanningUp)")
-        NSLog("#@ Bounds (checking bottom) \(bounds)")
-        NSLog("#@ ContentSize (checking bottom) \(contentSize)")
-        NSLog("#@ IsReachingToEnd \(scrollViewInControl.isPanningUp && bounds.origin.y + bounds.size.height >= contentSize.height)")
-
-        return scrollViewInControl.isPanningUp &&
-            bounds.origin.y + bounds.size.height >= contentSize.height
     }
 }
 

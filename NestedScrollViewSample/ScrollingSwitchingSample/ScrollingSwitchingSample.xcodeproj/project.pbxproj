@@ -73,6 +73,7 @@
 		DB725A85262A5ABF00E276A5 /* rome-25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB725A49262A5ABF00E276A5 /* rome-25.jpg */; };
 		DB725A8E262A5AE700E276A5 /* ImageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB725A8D262A5AE700E276A5 /* ImageTableView.swift */; };
 		DB725A93262A5BAB00E276A5 /* OuterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB725A92262A5BAB00E276A5 /* OuterScrollView.swift */; };
+		DBA04113263221F500E18F9C /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA04112263221F500E18F9C /* UIScrollView+Extensions.swift */; };
 		DBB712BB262F22F200A5EFF9 /* rome-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBB712B9262F22F200A5EFF9 /* rome-5.jpg */; };
 		DBB712BC262F22F200A5EFF9 /* rome-19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBB712BA262F22F200A5EFF9 /* rome-19.jpg */; };
 		DBB712C2262F22FE00A5EFF9 /* hawaii-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBB712C0262F22FE00A5EFF9 /* hawaii-16.jpg */; };
@@ -169,6 +170,7 @@
 		DB725A49262A5ABF00E276A5 /* rome-25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-25.jpg"; sourceTree = "<group>"; };
 		DB725A8D262A5AE700E276A5 /* ImageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableView.swift; sourceTree = "<group>"; };
 		DB725A92262A5BAB00E276A5 /* OuterScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterScrollView.swift; sourceTree = "<group>"; };
+		DBA04112263221F500E18F9C /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		DBB712B9262F22F200A5EFF9 /* rome-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-5.jpg"; sourceTree = "<group>"; };
 		DBB712BA262F22F200A5EFF9 /* rome-19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rome-19.jpg"; sourceTree = "<group>"; };
 		DBB712C0262F22FE00A5EFF9 /* hawaii-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hawaii-16.jpg"; sourceTree = "<group>"; };
@@ -227,12 +229,13 @@
 				DB7259D9262A5AA600E276A5 /* AppDelegate.swift */,
 				DB7259DB262A5AA600E276A5 /* SceneDelegate.swift */,
 				DB7259DD262A5AA600E276A5 /* ViewController.swift */,
+				DB725A92262A5BAB00E276A5 /* OuterScrollView.swift */,
+				DBA04112263221F500E18F9C /* UIScrollView+Extensions.swift */,
+				DB725A8D262A5AE700E276A5 /* ImageTableView.swift */,
 				DB7259DF262A5AA600E276A5 /* Main.storyboard */,
 				DB7259E2262A5AA800E276A5 /* Assets.xcassets */,
 				DB7259E4262A5AA800E276A5 /* LaunchScreen.storyboard */,
 				DB7259E7262A5AA800E276A5 /* Info.plist */,
-				DB725A8D262A5AE700E276A5 /* ImageTableView.swift */,
-				DB725A92262A5BAB00E276A5 /* OuterScrollView.swift */,
 			);
 			path = ScrollingSwitchingSample;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				DB7259DE262A5AA600E276A5 /* ViewController.swift in Sources */,
 				DB725A8E262A5AE700E276A5 /* ImageTableView.swift in Sources */,
 				DB7259DA262A5AA600E276A5 /* AppDelegate.swift in Sources */,
+				DBA04113263221F500E18F9C /* UIScrollView+Extensions.swift in Sources */,
 				DB7259DC262A5AA600E276A5 /* SceneDelegate.swift in Sources */,
 				DB725A93262A5BAB00E276A5 /* OuterScrollView.swift in Sources */,
 			);
