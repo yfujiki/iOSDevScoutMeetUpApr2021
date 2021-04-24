@@ -24,7 +24,9 @@ class ImageTableView: UITableView {
     private func setup() {
         register(ImageTableViewCell.self, forCellReuseIdentifier: "Cell")
 
-        // This is very important. Number of cell reused apparently uses this value
+        // Setting estimatedRowHeight to close to what you get eventually, is important.
+        // If estimatedRowHeight is much smaller than actual height, iOS will end up caching more cells for reuse than necessary.
+        // iOS would think more cells would occupy the screen at one time.
         estimatedRowHeight = 320
 
         dataSource = self
