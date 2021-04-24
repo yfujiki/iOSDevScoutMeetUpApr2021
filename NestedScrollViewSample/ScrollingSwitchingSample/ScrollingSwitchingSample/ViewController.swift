@@ -116,7 +116,7 @@ class ViewController: UIViewController {
 
         scrollView.isScrollEnabled = newScrollViewInCharge == scrollView
         tableViews.forEach { (tableView) in
-            tableView.isScrollEnabled = tableView == newScrollViewInCharge
+            tableView.isScrollEnabled = newScrollViewInCharge == tableView
         }
 
         // Content Offset
