@@ -50,11 +50,8 @@ class TilingView: UIView {
 
         let scale = context.ctm.a // This scale is retina scale * zoom scale
         let zoomScale = scale / UIScreen.main.scale
-        NSLog("Scale \(scale)")
 
         let logicalRect = rect.applying(CGAffineTransform(scaleX: scale, y: scale))
-        NSLog("Drawing logical rect origin : \(logicalRect.origin), size: \(logicalRect.size)")
-
         let logicalTileWidth = Self.tileWidth * UIScreen.main.scale
         let logicalTileHeight = Self.tileHeight * UIScreen.main.scale
 

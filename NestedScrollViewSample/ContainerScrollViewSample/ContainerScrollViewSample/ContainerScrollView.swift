@@ -74,32 +74,32 @@ class ContainerScrollView: UIScrollView {
         contentViewHeightConstraint.constant = lastTableViewMaxY
     }
     
-    private func updateFrameAndBounds(_ tableView: UITableView, _ lastTableViewMaxY: inout CGFloat) {
-        if contentOffset.y + frame.height <= lastTableViewMaxY {
+    private func updateFrameAndBounds(_ tableView: UITableView, _ tableViewMinY: inout CGFloat) {
+        if contentOffset.y + frame.height <= tableViewMinY {
             // Lower than the window
-            tableView.frame = CGRect(x: 0, y: lastTableViewMaxY,
+            tableView.frame = CGRect(x: 0, y: tableViewMinY,
                                      width: tableView.frame.width, height: 0)
             tableView.contentOffset = CGPoint(x: 0, y: 0)
-        } else if contentOffset.y >= lastTableViewMaxY + tableView.contentSize.height {
+        } else if contentOffset.y >= tableViewMinY + tableView.contentSize.height {
             // Higher than the window
-            tableView.frame = CGRect(x: 0, y: lastTableViewMaxY - tableView.contentSize.height,
+            tableView.frame = CGRect(x: 0, y: tableViewMinY - tableView.contentSize.height,
                                      width: tableView.frame.width, height: 0)
-            tableView.contentOffset = CGPoint(x: 0, y: contentOffset.y - lastTableViewMaxY)
-        } else if contentOffset.y >= lastTableViewMaxY {
+            tableView.contentOffset = CGPoint(x: 0, y: contentOffset.y - tableViewMinY)
+        } else if contentOffset.y >= tableViewMinY {
             // Lower part is visible
-            let tableViewHeight = min(lastTableViewMaxY + tableView.contentSize.height - contentOffset.y, frame.height)
+            let tableViewHeight = min(tableViewMinY + tableView.contentSize.height - contentOffset.y, frame.height)
             tableView.frame = CGRect(x: 0, y: contentOffset.y,
                                      width: tableView.frame.width, height: tableViewHeight)
-            tableView.contentOffset = CGPoint(x: 0, y: contentOffset.y - lastTableViewMaxY)
+            tableView.contentOffset = CGPoint(x: 0, y: contentOffset.y - tableViewMinY)
         } else {
             // Upper part is visible
-            let tableViewHeight = min(contentOffset.y + frame.height - lastTableViewMaxY, frame.height)
-            tableView.frame = CGRect(x: 0, y: lastTableViewMaxY,
+            let tableViewHeight = min(contentOffset.y + frame.height - tableViewMinY, frame.height)
+            tableView.frame = CGRect(x: 0, y: tableViewMinY,
                                      width: tableView.frame.width, height: tableViewHeight)
             tableView.contentOffset = CGPoint(x: 0, y: 0)
         }
 
-        lastTableViewMaxY += tableView.contentSize.height
+        tableViewMinY += tableView.contentSize.height
     }
 }
 
